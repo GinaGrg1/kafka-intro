@@ -48,3 +48,7 @@ To consume data from a specific partition.
 ```
 kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --from-beginning --partition 0
 ```
+To specify a group.id.
+```
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --consumer-property group.id=mygroup1 --from-beginning
+```
