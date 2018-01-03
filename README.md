@@ -35,7 +35,8 @@ kafka-topics --zookeeper 127.0.0.1:2181 --describe --topic my_first_topic
 ```
 kafka-console-producer --broker-list 127.0.0.1:9092 --topic first_topic
 ```
-# Consume data from a topic. [Do not include --zookeeper option].
+# Consume data from a topic.
+Do not include --zookeeper option
 ```
 kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic
 ```
