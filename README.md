@@ -1,4 +1,5 @@
 # kafka-intro
+Official website: https://kafka.apache.org/documentation
 
 Kafka is installed using docker. For Mac, run the following command in the terminal.
 ```
