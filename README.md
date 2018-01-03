@@ -8,7 +8,7 @@ docker run --rm -it \
            -e ADV_HOST=127.0.0.1 \
            landoop/fast-data-dev
 ```
-Kafka CLI tools.
+Kafka CLI tools. Run the following in a new terminal.
 
 ```
 docker run --rm -it --net=host landoop/fast-data-dev bash 
@@ -34,4 +34,12 @@ kafka-topics --zookeeper 127.0.0.1:2181 --describe --topic my_first_topic
 # Publish data to a topic
 ```
 kafka-console-producer --broker-list 127.0.0.1:9092 --topic first_topic
+```
+# Consume data from a topic. [Do not include --zookeeper option].
+```
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic
+```
+To consume data from the very beginning
+```
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --from-beginning
 ```
