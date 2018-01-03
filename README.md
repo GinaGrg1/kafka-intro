@@ -27,3 +27,7 @@ To delete a topic [To do this, delete.topic.enable must be set to true.]
 ```
 kafka-topics --zookeeper 127.0.0.1:2181 --topic my_first_topic --delete
 ```
+To get a description of a topic.
+```
+kafka-topics --zookeeper 127.0.0.1:2181 --describe --topic my_first_topic
+```
