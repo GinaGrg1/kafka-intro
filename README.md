@@ -23,3 +23,7 @@ To list all the topics.
 ```
 kafka-topics --zookeeper 127.0.0.1:2181 --list
 ```
+To delete a topic [To do this, delete.topic.enable must be set to true.]
+```
+kafka-topics --zookeeper 127.0.0.1:2181 --topic my_first_topic --delete
+```
