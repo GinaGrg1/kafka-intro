@@ -53,3 +53,18 @@ To specify a group.id.
 ```
 kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --consumer-property group.id=mygroup1 --from-beginning
 ```
+```
+Here are important concepts to remember:
+
+* Producer: Application that sends the messages.
+* Consumer: Application that receives the messages.
+Message: Information that is sent from the producer to a consumer through Apache Kafka.
+Connection: A connection is a TCP connection between your application and the Kafka broker.
+Topic: A Topic is a category/feed name to which messages are stored and published.
+Topic partition: Kafka topics are divided into a number of partitions, which allows you to split data across multiple brokers.
+Replicas A replica of a partition is a "backup" of a partition. Replicas never read or write data. They are used to prevent data loss.
+Consumer Group: A consumer group includes the set of consumer processes that are subscribing to a specific topic.
+Offset: The offset is a unique identifier of a record within a partition. It denotes the position of the consumer in the partition.
+Node: A node is a single computer in the Apache Kafka cluster.
+Cluster: A cluster is a group of nodes i.e., a group of computers.
+```
