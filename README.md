@@ -55,9 +55,11 @@ kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --c
 ```
 # Here are important concepts to remember:
 ```
-* Producer: Application that sends the messages.
-* Consumer: Application that receives the messages.
-Message: Information that is sent from the producer to a consumer through Apache Kafka.
++ Producer: Application that sends the messages.
++ Consumer: Application that receives the messages.
++ Message: Information that is sent from the producer to a consumer through Apache Kafka.
+
+
 Connection: A connection is a TCP connection between your application and the Kafka broker.
 Topic: A Topic is a category/feed name to which messages are stored and published.
 Topic partition: Kafka topics are divided into a number of partitions, which allows you to split data across multiple brokers.
