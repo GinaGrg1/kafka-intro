@@ -53,9 +53,8 @@ To specify a group.id.
 ```
 kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --consumer-property group.id=mygroup1 --from-beginning
 ```
+# Here are important concepts to remember:
 ```
-Here are important concepts to remember:
-
 * Producer: Application that sends the messages.
 * Consumer: Application that receives the messages.
 Message: Information that is sent from the producer to a consumer through Apache Kafka.
