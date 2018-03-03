@@ -9,6 +9,11 @@ docker run --rm -it \
            -e ADV_HOST=127.0.0.1 \
            landoop/fast-data-dev
 ```
+Alternatively
+```
+docker run --rm --it --net=host landoop/fast-data-dev bash
+```
+
 Kafka CLI tools. Run the following in a new terminal.
 
 ```
